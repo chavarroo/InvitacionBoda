@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Nuestra Historia de Amor</title>
+  </head>
+  <body>
+  <audio id="bgm" src="assets/hallelujah.mp3" loop preload="auto"></audio>
+  <audio id="pageSfx" src="assets/page-turn.wav" preload="auto"></audio>
+  <audio id="openBookSfx" src="assets/open-book1.mp3" preload="auto"></audio>
+  <audio id="closeBookSfx" src="assets/open-book1.mp3" preload="auto"></audio>
+  <audio id="autoReturnSfx" src="assets/auto-return.mp3" preload="auto"></audio>
+  <div class="bg"></div>
+
+
+  <div class="magic-dust"></div>
+  <div class="magic-sparkles"></div>
+  <div class="magic-glints">
+    <span class="glint g1"></span>
+    <span class="glint g2"></span>
+    <span class="glint g3"></span>
+  </div>
+  <div class="magic-twinkles" id="twinkles"></div>
+
+  <canvas id="c"></canvas>
+  <div class="focus-vignette"></div>
+  <button id="musicToggle" class="audio-toggle" type="button" aria-label="Silenciar musica" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 10v4h4l5 4V6L8 10H4z"></path>
+      <path class="wave wave-1" d="M16 9c1.5 1.5 1.5 4.5 0 6"></path>
+      <path class="wave wave-2" d="M18.8 6.8c3 3 3 7.4 0 10.4"></path>
+      <path class="slash" d="M5 5l14 14"></path>
+    </svg>
+  </button>
+  <button id="fullscreenToggle" class="fullscreen-toggle" type="button" aria-label="Pantalla completa" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <g class="fs-enter">
+        <path d="M8 4H4v4"></path>
+        <path d="M16 4h4v4"></path>
+        <path d="M20 16v4h-4"></path>
+        <path d="M4 16v4h4"></path>
+      </g>
+      <g class="fs-exit">
+        <path d="M9 4v4H5"></path>
+        <path d="M15 4v4h4"></path>
+        <path d="M20 15h-4v4"></path>
+        <path d="M4 15h4v4"></path>
+      </g>
+    </svg>
+  </button>
+
+  <div class="ui">
+    <button id="prev">Anterior</button>
+    <div id="counter">1 / 1</div>
+    <button id="next">Siguiente</button>
+  </div>
+
+  <div class="rotate-overlay" aria-live="polite" aria-hidden="true">
+    <div class="rotate-card">
+      <div class="rotate-icon" aria-hidden="true">
+        <span class="phone"></span>
+        <span class="arrow"></span>
+      </div>
+      <p class="rotate-title">Mejor en horizontal</p>
+      <p class="rotate-text">Por favor, voltea tu pantalla para disfrutar mejor el libro.</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
