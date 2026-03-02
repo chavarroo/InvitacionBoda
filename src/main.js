@@ -445,7 +445,7 @@ const PAGE_IMAGE_TEXTURES = {
   0: { front: "/assets/pages/001.jpeg", back: "/assets/pages/02.jpeg" },
   1: { front: "/assets/pages/03.jpeg", back: "/assets/pages/04.jpeg" },
   2: { front: "/assets/pages/05.jpeg", back: "/assets/pages/06.jpeg" },
-  3: { front: "/assets/pages/07.jpeg", back: "/assets/pages/08.jpeg" },
+  3: { front: "/assets/pages/007.jpeg", back: "/assets/pages/08.jpeg" },
   4: { front: "/assets/pages/09.jpeg"},
 };
 
